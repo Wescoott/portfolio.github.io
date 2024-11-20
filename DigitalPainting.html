@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Homepage</title>
+        <!--for navbar-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link rel="stylesheet" href="digitalpainting.css"/>
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    </head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="py-3 navbar navbar-expand-lg fixed-top auto-hiding-navbar">
+        <div class="container">
+            <a class="navbar-brand">
+                <img src="Pictures/Login/logo.png" class="logo" alt="logo"/>
+            </a>
+            <a class="navbar-logo">
+                <img src="Pictures/Login/WescottArt.png" class="logo" alt="Wescott Art"/>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="Homepage.html">Home Page</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Aboutme.html">About Me</a>
+                    </li>
+                    <!-- Dropdown Menu -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Artworks
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="DigitalPainting.html">Digital Painting</a></li>
+                            <li><a class="dropdown-item" href="Animation.html">Animation</a></li>
+                            <li><a class="dropdown-item" href="PhotogManip.html">Photo Manipulation</a></li>
+                            <li><a class="dropdown-item" href="Film.html">Film Production</a></li>
+                            <li><a class="dropdown-item" href="3D.html">3D Modeling</a></li>
+                        </ul>
+                    </li>
+                        <li class="nav-item">
+                            <button class="nav-link btn" id="logoutButton" onclick="logout()">Logout</button>
+                     </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+    
+    <!--Header-->
+    <section id="banner">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="col img-col">
+                        <img src="Pictures/Login/banner.png" alt="" class="img-fluid" />
+                    </div>
+                    <p>Hi! I'm Wesley, but I go by my online name, WescottArt. 
+                        I am a multimedia artist with various skills across all art mediums, from digital to traditional. 
+                        I have the necessary skills (I hope! :) ) for them all.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Header End-->
+
+    <!--What I do-->
+
+    <section id="wid">
+        <div class="container">
+            <div class="row align-items-center">
+              <div class="col">
+                <h1>What I Do:</h1>
+              </div>
+            </div>
+        </div>
+    </section> 
+            <section id="projects">
+                <div class="container">
+                    <!--Digital Painting-->
+                    <div class="row justify-content-center">
+                        <div class="col-md-8">
+                            <div class="card mb-3">
+                                <div class="row g-0">
+                                    <div class="col-md-4">
+                                        <img src="Pictures/Front Page/drawing.PNG" class="img-fluid rounded-start expanded-image" alt="...">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body">
+                                            <h2 class="card-title">Digital Painting/Trad Drawing</h2>
+                                            <h3 class="card-text">What app I use: &nbsp; Traditional:<br><br> 
+                                                Procreate &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;Mixed Media<br>PaintTool sai
+                                                <br>Photoshop<br>ClipStudio Pain</h3>        
+                                                <a href="Aboutme.html" button class="btn btn-primary bottom-right-btn">Contact for More</button></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div> 
+
+    <!--What I do end-->
+
+    <!--Artworks-->
+
+    <section id="wid">
+        <div class="container">
+            <div class="row align-items-center">
+              <div class="col">
+                <h1>More Works:</h1>
+              </div>
+            </div>
+        </div>
+    </section> 
+
+    <section id="projects">
+        <div class="container" style="height: 100vh;">
+            <div class="row justify-content-center align-items-center h-100">
+                <div class="col-md-4 text-center fixed-left-text">
+                    <h2>My Digital Artwork</h2>
+                </div> 
+                <div class="col-md-8 d-flex justify-content-center">
+                    <div id="carouselExampleAutoplaying" 
+                         class="carousel slide border border-dark rounded custom-carousel" 
+                         data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="d-flex justify-content-center">
+                                    <img src="Pictures/Drawing/Digital/dd1.PNG" class="align-middle" alt="First Slide">
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="d-flex justify-content-center">
+                                    <img src="Pictures/Drawing/Digital/dd2.PNG" class="align-middle" alt="Second Slide">
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="d-flex justify-content-center">
+                                <img src="Pictures/Drawing/Digital/dd3.png" class="align-middle" alt="Third Slide">
+                            </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="d-flex justify-content-center">
+                                <img src="Pictures/Drawing/Digital/dd4.png" class="align-middle" alt="Fourth Slide">
+                            </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="d-flex justify-content-center">
+                                <img src="Pictures/Drawing/Digital/dd5.png" class="align-middle" alt="Fifth Slide">
+                            </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="d-flex justify-content-center">
+                                <img src="Pictures/Drawing/Digital/dd6.png" class="align-middle" alt="Sixth Slide">
+                            </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="d-flex justify-content-center">
+                                <img src="Pictures/Drawing/Digital/dd7.png" class="align-middle" alt="Seventh Slide">
+                            </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="d-flex justify-content-center">
+                                <img src="Pictures/Drawing/Digital/dd8.png" class="align-middle" alt="Eighth Slide">
+                            </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="d-flex justify-content-center">
+                                <img src="Pictures/Drawing/Digital/ddmain.PNG" class="align-middle" alt="Main Slide">
+                            </div>
+                        </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+    <section id="projects">
+        <div class="container" style="height: 100vh;">
+            <div class="row justify-content-center align-items-center h-100">
+                <div class="col-md-4 text-center fixed-left-text">
+                    <h2>My Traditional Artwork</h2>
+                </div>
+                <div class="col-md-8 d-flex justify-content-center">
+                    <div id="carouselExampleAutoplaying2" 
+                         class="carousel slide border border-dark rounded custom-carousel" 
+                         data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="d-flex justify-content-center">
+                                    <img src="Pictures/Drawing/Traditional/dt1.jpg" class="align-middle" alt="First Slide">
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="d-flex justify-content-center">
+                                    <img src="Pictures/Drawing/Traditional/dt2.jpg" class="align-middle" alt="Second Slide">
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="d-flex justify-content-center">
+                                    <img src="Pictures/Drawing/Traditional/dt3.jpg" class="align-middle" alt="Third Slide">
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="d-flex justify-content-center">
+                                    <img src="Pictures/Drawing/Traditional/dt4.jpg" class="align-middle" alt="Fourth Slide">
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying2" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying2" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Artworks end-->
+
+    <!--contact us-->
+    <footer id="contact" class="footer-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col text-center">
+                    <h5 class="contact-header">Contact Me for More</h5>
+                    <p>
+                        <i class='bx bx-envelope'></i> wescott.art1@gmail.com &nbsp; &nbsp; 
+                        <i class='bx bxl-facebook-circle'></i> @wescoott &nbsp; &nbsp; 
+                        <i class='bx bxl-telegram'></i> Telegram: +63-995-521-6132
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--contact us end-->
+
+    <script>
+        // Logout
+        function logout() {         
+            localStorage.removeItem("userEmail");
+            localStorage.removeItem("userPassword");
+            window.location.href = "index.html";
+        }
+    </script>
+
+    <script>
+        // Logout
+        function logout() {         
+            localStorage.removeItem("userEmail");
+            localStorage.removeItem("userPassword");
+            window.location.href = "index.html";
+        }
+    </script>
+
+
+
+</body>
+</html>
