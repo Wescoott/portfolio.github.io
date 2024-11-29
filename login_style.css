@@ -41,37 +41,17 @@ nav ul li a:hover {
     }
 }
 
-#catchphrase {
-    margin-top: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#catchphrase img {
-    max-width: 100%;
-    width: 90%;
-    margin: 0 auto; 
-    display: block;
-}
-
 @media (max-width: 768px) {
     #catchphrase {
-        margin-top: 20px;
+        margin-top: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     #catchphrase img {
-        width: 80%;
-    }
-}
-
-@media (max-width: 480px) {
-    #catchphrase {
-        margin-top: 10px;
-    }
-
-    #catchphrase img {
-        width: 70%;
+        order: -1;
+        width: 90%;
     }
 }
 
