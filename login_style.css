@@ -42,15 +42,8 @@ nav ul li a:hover {
 }
 
 @media (max-width: 768px) {
-    #catchphrase {
-        display: flex;
-        flex-direction: column-reverse;
-        align-items: center;
-    }
-
     #catchphrase img {
-        margin-bottom: 20px;
-        width: 90%;
+        display: none;
     }
 }
 
